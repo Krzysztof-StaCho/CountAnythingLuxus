@@ -1,0 +1,122 @@
+:root {
+    --body-bg-color: #333;
+    --primary-bg-color: #4C6663;
+    --secondary-bg-color: #80CFA9;
+    --light-bg-color: #A7E2E3;
+    --counter-bg-color: #D9D9D9;
+    --button-bg-color: #3626A7;
+
+    --color-white: white;
+    --color-gray: #555555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Science Gothic", sans-serif;
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+#container {
+    margin: 0 auto;
+    background-color: white;
+}
+
+header {
+    background-color: var(--primary-bg-color);
+    color: var(--color-white);
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-bg-color);
+    color: var(--color-white);
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+
+main {
+    display: flex;
+}
+
+nav {
+    background-color: var(--secondary-bg-color);
+    width: 20%;
+}
+
+nav h2 {
+    background-color: var(--primary-bg-color);
+    color: var(--color-white);
+    padding: 15px 0;
+    border-radius: 40px;
+    text-align: center;
+    margin: 10px 30px 10px 30px;
+}
+
+#menu {
+    height: calc(100% - 85px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#menu ul {
+    margin: 20px 0;
+    padding: 0 10px;
+    color: var(--color-white);
+    list-style: inside;
+    text-align: left;
+    font-size: 150%;
+}
+
+#menu a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+article {
+    width: 80%;
+}
+
+#sectionTitle {
+    background-color: var(--light-bg-color);
+    color: var(--color-gray);
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+#sectionContent {
+    padding: 20px 20px 0 20px;
+    margin: 0 20px;
+    position: relative;
+}
+
+.count-slot {
+    background-color: var(--counter-bg-color);
+    border-radius: 20px;
+    min-height: 100px;
+    margin: 10px 5px;
+}
+
+.plus {
+    background-color: var(--button-bg-color);
+    color: var(--color-white);
+    text-align: center;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 200%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.plus:hover {
+    opacity: 0.9;
+}
